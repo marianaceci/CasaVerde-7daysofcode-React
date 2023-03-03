@@ -1,0 +1,74 @@
+@import 'src/styles/variables';
+
+section{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../../../public/hero.png');
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 20%;
+  background-size: 60%;
+      
+     
+  .article{
+    position: relative;
+    width: 585px;
+    color: $cinza;
+    margin-top: 200px;
+
+    h5{
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    h1{
+      font-family: 'Elsie Swash Caps', cursive;
+      font-weight: 900;
+      font-size: 82px;
+      line-height: 95px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+    
+    p{
+      line-height: 26px;
+      margin-bottom: 38px;
+      width: 480px;
+    }
+    
+    img{
+    position: absolute;
+    left: 450px;
+    top: -300px;
+    scale: 0.9;
+    }
+  }
+
+  .form{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 585px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__input{
+      background: url('../AssinaturaNewsletter/mail.svg');
+      background-repeat: no-repeat;
+      background-position-y: 50%;
+      background-position-x: 16px;
+      border: none;
+      padding: 16px 0 16px 48px;
+      
+      ::placeholder{
+        color: $cinza-claro;
+      }
+    }
+    
+    &__button{
+      color: $branco;
+      background-color: $amarelo;
+      border: none;
+      padding: 24px 28px;
+    }
+  }
+}

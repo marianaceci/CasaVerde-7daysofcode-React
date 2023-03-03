@@ -1,0 +1,18 @@
+@import 'src/styles/variables';
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+
+  &__navbar{
+    display: flex;
+    a{
+      color: $cinza;
+      padding: 16px;
+    }
+  }
+}
