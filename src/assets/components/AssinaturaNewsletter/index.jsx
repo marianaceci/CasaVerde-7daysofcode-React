@@ -1,6 +1,32 @@
+import { useState } from "react";
 import styles from "./AssinaturaNewsletter.module.scss";
 
 export default function AssinaturaNewsletter() {
+
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(null);
+
+  function emailEhValido(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = event => {
+    setEmail(event.target.value);
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    setError(null);
+
+    if (emailEhValido(email)) {
+      alert('email é valido');
+    } else {
+      setError('email é inválido');
+    }
+  }
+
+
   return (
     <section>
       
@@ -14,15 +40,21 @@ export default function AssinaturaNewsletter() {
         </p>
       </article>
 
-      <form className={styles.form}>
+      <form
+        className={styles.form}
+        onSubmit={handleSubmit}
+      >
         <input
           className={styles.form__input}
           type="email"
           placeholder="Insira seu e-mail"
+          value={email}
+          onChange={handleChange}
         />
-        <button className={styles.form__button} type="button">
+        <button className={styles.form__button} type="submit">
           Assinar newsletter
         </button>
+        {error && <h2 style={{color: 'red'}}>{error}</h2>}
       </form>
 
     </section>

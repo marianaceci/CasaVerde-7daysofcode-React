@@ -12,7 +12,7 @@ Pegue os componentes que você criou e, em vez de ter um arquivo .css para cada 
 
 ### Screenshot
 
-![](./screenshot.JPG)
+![](./screenshot.jpg)
 
 ### 03/07:
 
