@@ -1,20 +1,20 @@
 @import 'src/styles/variables';
 
-section{
+.newsletter{
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 150px 0;
   background-image: url('../../../../public/hero.png');
   background-repeat: no-repeat;
-  background-position-x: 90%;
-  background-position-y: 20%;
-  background-size: 60%;
+  background-position-x: 540px;
+  background-position-y: -70px;
+  background-size: 55%;
       
      
   .article{
     position: relative;
     width: 585px;
-    color: $cinza;
-    margin-top: 200px;
 
     h5{
       font-size: 22px;
@@ -52,6 +52,7 @@ section{
     align-items: center;
 
     &__input{
+      width: 50%;
       background: url('../AssinaturaNewsletter/mail.svg');
       background-repeat: no-repeat;
       background-position-y: 50%;
@@ -61,7 +62,10 @@ section{
       
       ::placeholder{
         color: $cinza-claro;
-      }
+      }      
+    }
+    *:focus{
+      outline: none;
     }
     
     &__button{

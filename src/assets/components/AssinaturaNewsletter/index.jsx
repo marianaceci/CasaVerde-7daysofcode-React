@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./AssinaturaNewsletter.module.scss";
 
 export default function AssinaturaNewsletter() {
 
   const [email, setEmail] = useState('');
   const [error, setError] = useState(null);
+  const [ehValido, setEhValido] = useState(false);
+
+  const valida = () => {
+    return email;
+  }
+
+  useEffect(() => {
+    const ehValido = valida();
+    setEhValido(ehValido);
+  }, [email]);
 
   function emailEhValido(email) {
-    return /\S+@\S+\.\S+/.test(email);
+    return (/\S+@\S+\.\S+/).test(email);
   }
 
   const handleChange = event => {
@@ -28,8 +38,7 @@ export default function AssinaturaNewsletter() {
 
 
   return (
-    <section>
-      
+    <section className={styles.newsletter}>      
       <article className={styles.article}>
         <h5>Sua casa com as</h5>
         <h1>melhores plantas</h1>
@@ -51,7 +60,11 @@ export default function AssinaturaNewsletter() {
           value={email}
           onChange={handleChange}
         />
-        <button className={styles.form__button} type="submit">
+        <button
+          disabled={!ehValido}
+          className={styles.form__button}
+          type="submit"
+        >
           Assinar newsletter
         </button>
         {error && <h2 style={{color: 'red'}}>{error}</h2>}

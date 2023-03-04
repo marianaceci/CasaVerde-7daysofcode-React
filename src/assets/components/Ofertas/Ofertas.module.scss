@@ -1,0 +1,73 @@
+@import 'src/styles/variables';
+
+.ofertas {
+  margin: 44px auto;
+  text-align: center;
+  color: $cinza;
+  h4{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  h2{
+    font-family: 'Elsie Swash Caps';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 82px;
+    line-height: 94px;
+    margin: 10px auto;
+  }
+
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+  &__card{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    background-color: $branco;
+    display: flex;
+    width: 380px;
+    height: 200px;
+    position: relative;
+
+    img{
+      position: absolute;
+      height: 100%;
+    }
+
+    &__texto{
+      padding: 20px 0 28px 180px;
+      h3{      
+        font-family: 'Elsie Swash Caps', cursive;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 37px;
+      }
+      h6{
+        font-size: 16px;
+        line-height: 20px;
+        color: $cinza-claro;
+        font-weight: 400;
+        padding: 10px 0;
+      }
+      span{      
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $amarelo;
+        &:after{
+          content: url('./seta.png');
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+ 
+}
+
+}

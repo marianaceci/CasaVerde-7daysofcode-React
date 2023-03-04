@@ -1,0 +1,45 @@
+@import 'src/styles/variables';
+
+.container{
+  background: $branco;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 995px;
+  margin: 0 auto;
+  padding: 0;
+
+  img{
+    width: 585px;
+  }
+
+  &__texto{
+    width: 410px;
+    padding-left: 32px;
+    h5{
+      font-size: 22px;
+      line-height: 26px;
+    }
+    h2{
+      font-family: 'Elsie Swash Caps', cursive;
+      font-weight: 900;
+      font-size: 42px;
+      line-height: 48px;
+    }
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        
+        &:before{
+        content: url('./amarelinho.png');
+        padding-right: 10px;
+        }
+      }
+      
+    }
+  }
+}
