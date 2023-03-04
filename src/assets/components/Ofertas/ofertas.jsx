@@ -1,8 +1,15 @@
+import planta01 from '/ofertas/produto-01.png';
+import planta02 from '/ofertas/produto-02.png';
+import planta03 from '/ofertas/produto-03.png';
+import planta04 from '/ofertas/produto-04.png';
+import planta05 from '/ofertas/produto-05.png';
+import planta06 from '/ofertas/produto-06.png';
+
 export const ofertas = [
-    {"nome": "Ajuga reptans", "img": "../../../../public/ofertas/produto-01.png"},
-    {"nome": "Cordyline fruticosa", "img": "../../../../public/ofertas/produto-02.png"},
-    {"nome": "Crassula ovata", "img": "../../../../public/ofertas/produto-03.png"},
-    {"nome": "Cyperus rotundus", "img": "../../../../public/ofertas/produto-04.png"},
-    {"nome": "Delairea odorata", "img": "../../../../public/ofertas/produto-05.png"},
-    {"nome": "Datura metel", "img": "../../../../public/ofertas/produto-06.png"}
+    {"nome": "Ajuga reptans", "img": planta01},
+    {"nome": "Cordyline fruticosa", "img": planta02},
+    {"nome": "Crassula ovata", "img": planta03},
+    {"nome": "Cyperus rotundus", "img": planta04},
+    {"nome": "Delairea odorata", "img": planta05},
+    {"nome": "Datura metel", "img": planta06}
   ]
