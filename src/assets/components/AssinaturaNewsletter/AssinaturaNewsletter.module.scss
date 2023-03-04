@@ -4,17 +4,17 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 150px 0 150px 90px;
   background-image: url('../../../../public/hero.png');
   background-repeat: no-repeat;
-  background-position-x: 540px;
-  background-position-y: -70px;
-  background-size: 55%;
+  background-position-x: 75%;
+  background-position-y: 100%;
+  background-size: 50%;
       
      
   .article{
     position: relative;
-    width: 585px;
+    max-width: 585px;
 
     h5{
       font-size: 22px;

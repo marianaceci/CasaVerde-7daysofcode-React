@@ -16,15 +16,17 @@ body {
   background-position: right top;
 }
 
-a,
+button {
+    cursor: pointer;
+}
+
+/* a,
 button,
 input {
     transition: .3s ease-in-out;
 }
 
-button {
-    cursor: pointer;
-}
+
 
 
 a:hover,
@@ -32,4 +34,4 @@ a:focus,
 button:hover,
 button:focus {
     opacity: .5;
-}
+} */

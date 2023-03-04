@@ -30,7 +30,7 @@ export default function AssinaturaNewsletter() {
     setError(null);
 
     if (emailEhValido(email)) {
-      alert('email é valido');
+      alert('email cadastrado com sucesso');
     } else {
       setError('email é inválido');
     }

@@ -13,7 +13,7 @@ export default function Ofertas() {
             <div className={styles.cards__card__texto}>
               <h3>{oferta.nome}</h3>
               <h6>R$ 20,00</h6>
-              <span>Comprar</span>
+              <a href="#">Comprar</a>
             </div>
           </div>
         ))}

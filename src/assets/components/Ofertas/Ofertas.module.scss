@@ -42,6 +42,7 @@
 
     &__texto{
       padding: 20px 0 28px 180px;
+      text-align: left;
       h3{      
         font-family: 'Elsie Swash Caps', cursive;
         font-weight: 900;
@@ -55,7 +56,7 @@
         font-weight: 400;
         padding: 10px 0;
       }
-      span{      
+      a{      
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
