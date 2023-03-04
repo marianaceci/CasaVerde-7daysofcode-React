@@ -9,11 +9,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
 body {
   padding: 0 5vw;
   background-color: #f8f8f8;
-  background: url('../../../../public/bg.png') 0 0 no-repeat;
-  background-position: right top;
 }
 
 button {
